@@ -126,8 +126,8 @@ Once all steps are defined, call `start()` or `showHints()` to start the show:
 // SomeComponent.vue
 {
     mounted() {
-        this.$intro().start(); // start the guide
-        this.$intro().showHints(); // show hints
+        const introJS = require('intro.js')
+        introJS.introJs().start()
     }
 }
 ```
